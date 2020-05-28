@@ -10,7 +10,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 db = SQLAlchemy(app)
 
-
+# from jim
 class tempReading(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     temperature = db.Column(db.REAL, nullable=False)
